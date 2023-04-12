@@ -68,6 +68,10 @@ a:hover {
     max-width: 50%;
 }
 
+.column.middle.solo {
+    margin: auto;
+}
+
 /* Clear floats after the columns */
 .row::after {
     content: "";
@@ -85,6 +89,10 @@ a:hover {
 
     .column.middle {
         order: 1;
+    }
+
+    .column.middle.solo {
+        margin: 0;
     }
 
     .column.side {
