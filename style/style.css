@@ -78,8 +78,20 @@ a:hover {
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 
-    .column.side,
+    .column.side, .column.middle {
+        float: none;
+        max-width: 100%;
+    }
+
     .column.middle {
-        width: 100%;
+        order: 1;
+    }
+
+    .column.side {
+        order: 2;
+    }
+
+    .row {
+        display: grid;
     }
 }
