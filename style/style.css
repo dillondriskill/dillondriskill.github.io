@@ -16,7 +16,16 @@ a:hover {
     font-weight: bold;
 }
 
-.header ul {
+/* Make navbar stay at top */
+.navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* Navbar items are in an ul */
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -25,7 +34,8 @@ a:hover {
     color: white;
 }
 
-.header li a{
+/* Make each item a nice looking square button */
+.navbar li a {
     float: left;
     display: block;
     color: white;
@@ -35,15 +45,9 @@ a:hover {
     border-right: 2px solid #222;
 }
 
-.header li a:hover{
+/* Make background lighter when hovered */
+.navbar li a:hover {
     background-color: #444;
-}
-
-.header {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    width: 100%;
 }
 
 /* Create three unequal columns that floats next to each other */
@@ -54,12 +58,12 @@ a:hover {
 
 /* Left and right column */
 .column.side {
-    width: 25%;
+    max-width: 25%;
 }
 
 /* Middle column */
 .column.middle {
-    width: 50%;
+    max-width: 50%;
 }
 
 /* Clear floats after the columns */
@@ -71,7 +75,9 @@ a:hover {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column.side, .column.middle {
+
+    .column.side,
+    .column.middle {
         width: 100%;
     }
 }
