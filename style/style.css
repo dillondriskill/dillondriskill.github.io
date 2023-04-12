@@ -8,6 +8,8 @@ body {
     background-color: dimgray;
 }
 
+/* Make the default behavior for links to be the same 
+    color as the text surroundin them, and embolden when hovered */
 a {
     color: inherit;
 }
