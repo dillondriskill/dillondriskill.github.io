@@ -1,3 +1,3 @@
 # dillondriskill.github.io
 Personal website and blog
-(dillondriskill.github.io)
+https://dillondriskill.github.io
