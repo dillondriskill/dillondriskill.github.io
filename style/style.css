@@ -52,6 +52,13 @@ a:hover {
     background-color: #444;
 }
 
+im{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
 /* Create three unequal columns that floats next to each other */
 .column {
     float: left;
